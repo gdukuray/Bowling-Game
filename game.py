@@ -6,7 +6,7 @@ class Game(object):
     score = 0
     def roll(pins):
         '''called everytime a player rolls a ball. Input 'pins' is the number of
-            pins knocked down.'''
+            pins knocked down. This is a test'''
         score += pins
 
     def score():
