@@ -3,11 +3,14 @@ class Game(object):
     '''The Game is Bowling! One game has TEN frames. In each frame, there are 1 or
         2 rolls. The TENTH frame has 2 or 3 rolls(different from other frames).'''
 
-    score = 0
-    def roll(pins):
+    def __init__(self):
+        self.rolls = [0 for i in range(21)]
+        self.currentRoll = 0
+        
+    def roll(self, pins):
         '''called everytime a player rolls a ball. Input 'pins' is the number of
-            pins knocked down. This is a test'''
-        score += pins
+            pins knocked down.'''
+        self.currentRoll += pins
 
     def score():
         '''Called at the very end of game, and returns the total score for the
