@@ -17,6 +17,8 @@ class Game(object):
             game. This function must iterate through all the frames of the game
             and calculate all their scores.
             The score for a spare or a strike depends on the frame's successor.'''
+        score = 0
+        frame = 0
         return score
         
     
